@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F4F6F9">
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado: Reposo"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#193052"
+        android:gravity="center"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tvDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dirección: Recto"
+        android:textSize="18sp"
+        android:textColor="#138971"
+        android:gravity="center"
+        android:paddingBottom="12dp" />
+
+    <!-- Acelerometro -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acelerómetro (m/s²)"
+            android:textStyle="bold"
+            android:textColor="#193052" />
+
+        <TextView
+            android:id="@+id/tvAcelerometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X: 0.00   Y: 0.00   Z: 0.00"
+            android:textSize="16sp"
+            android:fontFamily="monospace" />
+    </LinearLayout>
+
+    <!-- Giroscopio -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giroscopio (rad/s)"
+            android:textStyle="bold"
+            android:textColor="#193052" />
+
+        <TextView
+            android:id="@+id/tvGiroscopio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X: 0.00   Y: 0.00   Z: 0.00"
+            android:textSize="16sp"
+            android:fontFamily="monospace" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContadores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eventos recibidos: 0 | procesados: 0"
+        android:textSize="14sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historial de lecturas"
+        android:textStyle="bold"
+        android:textColor="#193052" />
+
+    <ScrollView
+        android:id="@+id/scrollHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:fontFamily="monospace" />
+    </ScrollView>
+
+</LinearLayout>
