@@ -11,5 +11,3 @@ Aplicación Android en Kotlin que lee el **acelerómetro** y el **giroscopio** p
 ## Ejecución
 1. Clonar el repositorio y abrirlo en Android Studio.
 2. Ejecutar en un dispositivo físico o en el emulador (Extended Controls > Virtual Sensors para simular movimiento).
-
-Autor: Pedro Ezequiel Urieta Fuentes
